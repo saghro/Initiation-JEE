@@ -7,4 +7,5 @@ import com.jee.saghro.bean.Course;
 public interface IListeCoursesDAO {
 	
     List<Course> rechercherCourses();
+    void creerCourse(final Course pCourse);
 }

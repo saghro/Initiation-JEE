@@ -22,4 +22,7 @@ public class ListeCoursesDAO implements IListeCoursesDAO {
      final TypedQuery<Course> lTypedQuery = entityManager.createQuery(lCriteriaQuery);
    return lTypedQuery.getResultList();
    }
+   public void creerCourse(final Course pCourse) {
+	   entityManager.persist(pCourse);
+	   }
   }
