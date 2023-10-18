@@ -25,8 +25,7 @@ pModel.addAttribute("creation", new CreationForm());
 return "creation";
 }
 @RequestMapping(value="/creerCreationListeCourses", method = RequestMethod.POST)
-public String creer(@Valid @ModelAttribute(value="creation") final CreationForm
-pCreation,
+public String creer(@Valid @ModelAttribute(value="creation") final CreationForm pCreation,
 final BindingResult pBindingResult, final ModelMap pModel) {
 if (!pBindingResult.hasErrors()) {
 final Integer lIntQuantite = Integer.valueOf(pCreation.getQuantite());

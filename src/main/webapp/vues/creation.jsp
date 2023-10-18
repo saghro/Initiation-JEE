@@ -20,23 +20,6 @@ action="creerCreationListeCourses">
 <b><i><form:errors path="quantite" cssclass="error"/></i></b><br>
 <input type="submit"/>
 </form:form>
-<table border="1">
-<thead>
-<tr>
-<th><spring:message code="colonne.identifiant"/></th>
-<th><spring:message code="colonne.libelle"/></th>
-<th><spring:message code="colonne.quantite"/></th>
-</tr>
-</thead>
-<tbody>
-<c:forEach items="${listeCourses}" var="course">
-<tr>
-<td><c:out value="${course.id}"/></td>
-<td><c:out value="${course.libelle}"/></td>
-<td><c:out value="${course.quantite}"/></td>
-</tr>
-</c:forEach>
-</tbody>
-</table>
+
 </body>
 </html>
